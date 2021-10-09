@@ -1,8 +1,8 @@
 const { hexToRGB, getContrast } = require("./utils");
 
 const hexA11y = (input, config = {}) => {
-  let dark = config?.dark || "#000000";
-  let light = config?.light || "#ffffff";
+  const dark = config.dark || "#000000";
+  const light = config.light || "#ffffff";
 
   const { r, g, b } = hexToRGB(input);
 
