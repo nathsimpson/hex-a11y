@@ -1,8 +1,8 @@
 {
   "name": "hex-a11y",
   "author": "Nathan Simpson (https://nathansimpson.design)",
-  "description": "A really simple package that derives an accessible text color for a foreground.",
-  "version": "1.0.1",
+  "description": "A selection of a11y helpful functions for working with HEX colors.",
+  "version": "1.0.2",
   "devDependencies": {
     "eslint": "^8.0.0",
     "jest": "^26.0.1"
