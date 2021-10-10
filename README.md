@@ -1,6 +1,6 @@
 # HEX-A11Y
 
-A selection of a11y helpful functions for working with hex colours.
+A selection of a11y helpful functions for working with hex colors.
 
 - getContrastColor
 - getContrastRatio
