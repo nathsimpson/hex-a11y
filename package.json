@@ -2,7 +2,7 @@
   "name": "hex-a11y",
   "author": "Nathan Simpson (https://nathansimpson.design)",
   "description": "A really simple package that derives an accessible text color for a foreground.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "devDependencies": {
     "jest": "^26.0.1"
   },
