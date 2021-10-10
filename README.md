@@ -1,52 +1,67 @@
 # HEX-A11Y
 
-A really simple package that derives an accessible text color for a background
+A selection of a11y helpful functions for working with hex colours.
+
+- getContrastColor
+- getContrastRatio
+- getWcagScore
+
+
+```bash
+npm install hex-ally
+```
+## getContrastColor
+Derives an accessible text color for a background.
 
 ```javascript
-import hexAlly from "hex-ally";
+import { getContrastColor } from "hex-ally";
 
-hexAlly("#ffffff"); // returns "#000000"
+getContrastColor("#009aef"); // returns "#000000"
 
-hexAlly("#000000"); // returns "#ffffff"
+getContrastColor("#004165"); // returns "#ffffff"
+```
+
+By default, getContrastColor will return values for pure black (#000000) or pure white (#FFFFFF).
+
+You can change this behaviour by providing values in the config argument...
+```javascript
+getContrastColor("#ff0000", { dark: '#232323', light: '#fafafa' }); // returns "#232323"
 ```
 
 Here is a real-world example of how this could be used:
+
 ```javascript
-import getA11yColor from "hex-ally";
+import { getContrastColor } from "hex-ally";
 
 const App = () => (
   <div css={{
-    backgroundColor: '#009aef'
+    backgroundColor: "#004165"
   }}>
-    <p css={{ color: getA11yColor('#009aef') }}>
+    <p css={{ color: getContrastColor("#004165") }}>
       Hello world
     </p>
   </div>
 )
 ```
 
-## Installation
 
-```bash
-npm install hex-alpha
-```
-or if you prefer using yarn
-```
-yarn add hex-alpha
-```
 
-## Configuration
+## getContrastRatio
+Returns the contrast ratio between two colors.
 
-By default, hexAlly will return values for pure black (#000000) or pure white (#FFFFFF).
-
-You can change this behaviour by providing values in the config argument...
 ```javascript
-hexAlly("#f00", { dark: '#121212', light: '#fafafa' }); // returns "#232323"
+import { getContrastRatio } from "hex-ally";
+
+getContrastRatio("#004165", '#ffffff'); // returns 13.31
 ```
 
-A word of warning - this does not change the behaviour of the algorithm! only what the function returns.
+## getWcagScore
+Returns the WCAG score determined from two colors.
+```javascript
+import { getWcagScore } from "hex-ally";
 
-This might be useful if your designs use near-black and near-white greys for text, so avoid using 'middle greys', or you may experience some unexpected results.
+getWcagScore("#004165", '#ffffff'); // returns "AAA"
+```
 
 
 ## If you like this package...
