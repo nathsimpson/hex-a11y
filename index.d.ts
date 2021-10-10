@@ -4,7 +4,7 @@ type hexColor = string;
 type wcagScore = "AAA" | "AA" | "AA+" | "FAIL";
 
 /** Derives an accessible text color for a background. */
-export function hexAlly(
+export function getContrastColor(
   input: hexColor,
   config?: { dark: hexColor; light: hexColor }
 ): hexColor;
