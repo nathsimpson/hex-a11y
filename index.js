@@ -48,7 +48,6 @@ const getWcagScore = (inputA, inputB) => {
   }
 
   if (contrastRatio >= 4.5) {
-    A;
     return "AA";
   }
 

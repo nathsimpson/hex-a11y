@@ -4,6 +4,7 @@
   "description": "A really simple package that derives an accessible text color for a foreground.",
   "version": "1.0.1",
   "devDependencies": {
+    "eslint": "^8.0.0",
     "jest": "^26.0.1"
   },
   "main": "index.js",
@@ -22,6 +23,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint ."
   }
 }
