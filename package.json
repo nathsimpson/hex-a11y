@@ -17,9 +17,9 @@
     "accessibility",
     "contrast"
   ],
-  "homepage": "https://github.com/nathsimpson/hex-ally",
+  "homepage": "https://github.com/nathsimpson/hex-a11y",
   "bugs": {
-    "url": "https://github.com/nathsimpson/hex-ally/issues"
+    "url": "https://github.com/nathsimpson/hex-a11y/issues"
   },
   "license": "MIT",
   "scripts": {
