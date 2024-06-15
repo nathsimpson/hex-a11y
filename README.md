@@ -14,7 +14,7 @@ npm install hex-ally
 Derives an accessible text color for a background.
 
 ```javascript
-import { getContrastColor } from "hex-ally";
+import { getContrastColor } from "hex-a11y";
 
 getContrastColor("#009aef"); // returns "#000000"
 
